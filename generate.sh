@@ -8,6 +8,10 @@ OUTPUT_DIRECTORY="$BASE_DIRECTORY/optimised"
 SVGO="$BASE_DIRECTORY/node_modules/.bin/svgo"
 INKSCAPE="/Applications/Inkscape.app/Contents/MacOS/inkscape"
 
+BLACK="#000000"
+WHITE="#FFFFFF"
+DPI="300"
+
 function main {
   prepareOutputDirectory
   optimise "$INPUT_DIRECTORY/horizontal-for-white-background.svg"
@@ -15,6 +19,18 @@ function main {
   optimise "$INPUT_DIRECTORY/vertical-for-white-background.svg"
   optimiseForBlackBackground "$INPUT_DIRECTORY/horizontal-for-white-background.svg" "$OUTPUT_DIRECTORY/horizontal-for-black-background.svg"
   optimiseForBlackBackground "$INPUT_DIRECTORY/vertical-for-white-background.svg" "$OUTPUT_DIRECTORY/vertical-for-black-background.svg"
+
+  exportTransparentPNG "$OUTPUT_DIRECTORY/icon.svg" "$OUTPUT_DIRECTORY/icon-on-transparent-background.png"
+  exportPNG "$OUTPUT_DIRECTORY/icon.svg" "$OUTPUT_DIRECTORY/icon-on-white-background.png" "$WHITE"
+  exportPNG "$OUTPUT_DIRECTORY/icon.svg" "$OUTPUT_DIRECTORY/icon-on-black-background.png" "$BLACK"
+
+  exportTransparentPNG "$OUTPUT_DIRECTORY/horizontal-for-white-background.svg" "$OUTPUT_DIRECTORY/horizontal-on-transparent-background.png"
+  exportPNG "$OUTPUT_DIRECTORY/horizontal-for-white-background.svg" "$OUTPUT_DIRECTORY/horizontal-on-white-background.png" "$WHITE"
+  exportPNG "$OUTPUT_DIRECTORY/horizontal-for-black-background.svg" "$OUTPUT_DIRECTORY/horizontal-on-black-background.png" "$BLACK"
+
+  exportTransparentPNG "$OUTPUT_DIRECTORY/vertical-for-white-background.svg" "$OUTPUT_DIRECTORY/vertical-on-transparent-background.png"
+  exportPNG "$OUTPUT_DIRECTORY/vertical-for-white-background.svg" "$OUTPUT_DIRECTORY/vertical-on-white-background.png" "$WHITE"
+  exportPNG "$OUTPUT_DIRECTORY/vertical-for-black-background.svg" "$OUTPUT_DIRECTORY/vertical-on-black-background.png" "$BLACK"
 }
 
 function prepareOutputDirectory {
@@ -48,8 +64,21 @@ function convertTextToPathAndOptimise {
   "$SVGO" --input "$output" --output "$output" --quiet
 }
 
-# Stage 3: export SVG as PNG with white background
-# Stage 4: export SVG as PNG with transparent background
-# Stage 4: export SVG as PNG with black background
+function exportPNG {
+  input=$1
+  output=$2
+  background=$3
+
+  echo "Exporting $input as $output..."
+  "$INKSCAPE" --export-filename="$output" --export-area-page --export-background="$background" --export-type=png --export-dpi=$DPI "$input"
+}
+
+function exportTransparentPNG {
+  input=$1
+  output=$2
+
+  echo "Exporting $input as $output..."
+  "$INKSCAPE" --export-filename="$output" --export-area-page --export-background-opacity="0" --export-type=png --export-dpi=$DPI "$input"
+}
 
 main
