@@ -12,3 +12,9 @@ The Batect logo is a trademark of Charles Korn and may only be used subject to t
 Any permission to use the logo under these guidelines can be revoked at any time and for any reason.
 
 Any use that does not meet these guidelines requires explicit written permission from Charles Korn. 
+
+
+
+## Which version should I use?
+
+In general, you should use the files from the `optimised` directory. This directory contains PNG and optimised SVG versions suitable for a variety of use cases.
