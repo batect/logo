@@ -16,7 +16,15 @@ Any use that does not meet these guidelines requires explicit written permission
 
 In general, you should use the files from the `optimised` directory. This directory contains PNG and optimised SVG versions suitable for a variety of use cases.
 
+There are three layout variations and three background colour choices:
+
+| Background  | Horizontal                                                  | Vertical                                                | Icon                                            |
+| ----------- | ----------------------------------------------------------- | ------------------------------------------------------- | ----------------------------------------------- |
+| White       | ![horizontal](optimised/horizontal-on-white-background.png) | ![vertical](optimised/vertical-on-white-background.png) | ![icon](optimised/icon-on-white-background.png) |
+| Black       | ![horizontal](optimised/horizontal-on-black-background.png) | ![vertical](optimised/vertical-on-black-background.png) | ![icon](optimised/icon-on-black-background.png) |
+| Transparent | ![horizontal](optimised/horizontal-on-transparent-background.png) | ![vertical](optimised/vertical-on-transparent-background.png) | ![icon](optimised/icon-on-transparent-background.png) |
+
 
 ## Colour reference
 
-Batect green: <span style="width: 20px; height: 20px; background: #89B400"></span> #89B400
+Batect green: #89B400
