@@ -7,13 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="347"
-   height="79"
-   viewBox="0 0 91.810415 20.902084"
+   width="281.52274"
+   height="79.000008"
+   viewBox="0 0 74.486222 20.902086"
    version="1.1"
    id="svg1240"
    inkscape:version="1.0.1 (c497b03c, 2020-09-10)"
-   sodipodi:docname="horizontal-white-background.svg">
+   sodipodi:docname="horizontal-for-white-background.svg">
   <defs
      id="defs1234">
     <rect
@@ -36,13 +36,13 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.4392614"
-     inkscape:cx="152.56515"
-     inkscape:cy="83.143016"
+     inkscape:zoom="3.606331"
+     inkscape:cx="139.71341"
+     inkscape:cy="48.657916"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
-     showgrid="false"
+     showgrid="true"
      units="px"
      inkscape:window-width="1920"
      inkscape:window-height="1035"
@@ -60,8 +60,8 @@
        dotted="true"
        empcolor="#ffaf3f"
        empopacity="0.25098039"
-       originx="1.7529296e-07"
-       originy="4.3505862e-06" />
+       originx="3.5058592e-07"
+       originy="8.7011725e-06" />
   </sodipodi:namedview>
   <metadata
      id="metadata1237">
@@ -71,7 +71,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -239,10 +239,10 @@
     <text
        xml:space="preserve"
        id="text1651"
-       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32.27920000000000300px;line-height:1.25;font-family:'Zilla Slab';-inkscape-font-specification:'Zilla Slab, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect1653);fill:#555555;fill-opacity:1;"
-       transform="matrix(0.78241346,0,0,0.78241346,-5.4262939,-44.015693)"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.27920000000000300px;line-height:1.25;font-family:'Zilla Slab';-inkscape-font-specification:'Zilla Slab, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect1653);fill:#000000;fill-opacity:1;"
+       transform="matrix(0.59612455,0,0,0.59612455,1.1633606,-31.00096)"><tspan
          x="34.017578"
          y="80.087069"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32.2792px;font-family:'Zilla Slab';-inkscape-font-specification:'Zilla Slab, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#555555;fill-opacity:1">Batect</tspan></tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.2792px;font-family:'Zilla Slab';-inkscape-font-specification:'Zilla Slab, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">Batect</tspan></tspan></text>
   </g>
 </svg>

@@ -54,7 +54,7 @@ function optimiseForBlackBackground {
   output=$2
 
   echo "Optimising $input for black background..."
-  sed "s/#555555/#ffffff/g" "$input" | convertTextToPathAndOptimise "$output"
+  sed "s/fill:#000000/fill:#ffffff/g" "$input" | convertTextToPathAndOptimise "$output"
 }
 
 function convertTextToPathAndOptimise {
